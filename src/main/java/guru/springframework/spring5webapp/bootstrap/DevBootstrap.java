@@ -31,6 +31,10 @@ public class DevBootstrap implements ApplicationListener<ContextRefreshedEvent> 
   private void initData(){
 
     final Publisher harper = new Publisher("Harper Collins");
+    harper.setStreet("12th street");
+    harper.setCity("LA");
+    harper.setHouseNumber("12");
+    harper.setZipcode("XXXX");
     publisherRepository.save(harper);
 
     //Eric
@@ -43,6 +47,10 @@ public class DevBootstrap implements ApplicationListener<ContextRefreshedEvent> 
     bookRepository.save(ddd);
 
     final Publisher worx = new Publisher("Worx");
+    worx.setStreet("13th avenue");
+    worx.setCity("LA");
+    worx.setHouseNumber("32");
+    worx.setZipcode("XXXX");
     publisherRepository.save(worx);
 
     //Rod
